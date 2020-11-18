@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Password Verivication</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form id="app" class="ui-modal" data-state="idle" autocomplete="off">
+  <div class="ui-icon">
+    <div class="ui-lock"></div>
+  </div>
+  <div class="ui-title">✨ Hai Putri Aulia ✨ </div>
+  <div class="ui-subtitle">Please enter the password to view this link.</div>
+  <div class="ui-subtitle">ℹ️ Hint:</br>Nama panggilan kamu dalam 3 huruf.</div>
+  <div class="ui-subtitle">
+    <span data-show="idle">
+      Please enter the password to view this link.
+    </span>
+    <span data-show="validating">
+      Validating...
+    </span>
+    <span data-show="error" class="ui-error">
+      Invalid password
+    </span>
+    <span data-show="success">
+	   Success ✅ :
+      <a class="ui-link" href="https://arifrahamnulhakim.github.io/29Nov/uti/" target=>29Nov UTI ✨</a>
+    </span>
+  </div>
+  <div class="ui-password">    
+    <input type="password" name="" id="" class="ui-password-input" placeholder="Type Password ..." />
+  </div>
+  <button class="ui-submit">Submit</button>
+  <button class="ui-reset" type="button" title="Reset"></button>
+</form>
+<!-- partial -->
+  <script src='https://unpkg.com/xstate@next/dist/xstate.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
